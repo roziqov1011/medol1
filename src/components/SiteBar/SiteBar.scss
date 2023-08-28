@@ -1,0 +1,106 @@
+.side__bar-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #0D4C93;
+    font-weight: bold;
+}
+
+.nav__sidebar{
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    transition: all ease 0.3s;
+    width: 400px;
+    top: 0;
+    right: -400px;
+    z-index: 4;
+}
+
+.sidebar__bg{
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000080;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: none;
+}
+
+.sidebar__open{
+    display: block;
+    transition: all ease 0.3s;
+    right: 0;
+}
+
+.sidebar__bg__open{
+    display: block;
+}
+
+.sidebar__top{
+    margin-top: 50px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button{
+        border-radius: 5px;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        margin-right: 10px;
+        border: 1px solid transparent;
+        padding: 5px;
+        font-weight: bold;
+        &:hover {
+            transition: all ease 0.3s;
+            color: red;
+            border: 1px solid red;
+        }
+        &:active{
+           border: 1px solid #000;
+           background: #fff;
+        }
+    }
+}
+
+.sidebar__list{
+    padding-left: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    li{
+        margin-top: 20px;
+        margin-left: 20px;
+        a{
+            color: #0D4C93;
+            font-size: 20px;
+        }
+    }
+
+    .active {
+        color: #00C9C9;
+        position: relative;
+        border-bottom: 1px solid #00C9C9;
+
+        &::before {
+            position: absolute;
+            top: -10px;
+            left: -15px;
+            content: "";
+            width: 10px;
+            height: 10px;
+            display: block;
+            border-radius: 50%;
+            background-color: #00C9C9;
+        }
+    }
+
+}
+
+.sidebar__list__open{
+    display: flex;
+    
+}

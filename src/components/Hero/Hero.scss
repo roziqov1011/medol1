@@ -1,0 +1,79 @@
+.hero{
+    padding-top: 217px;
+    background-image: url('../../assets/img/blur-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #f1f1f0;
+    padding-bottom: 90px;
+}
+
+.swiper {
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    font-size: 18px;
+  
+    /* Center slide text vertically */
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero__info{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    h2{
+        color: #0D4C93;
+        font-size: 50px;
+        font-weight: 500;
+        letter-spacing: 4.5px;
+    }
+    p{
+        margin-top: 31px;
+        color: #363535;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 40px;
+
+    }
+    button{
+        border-radius: 35px;
+        opacity: 0.9;
+        background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+        border: none;
+        padding: 21px;
+        color: white;
+        font-size: 24px;
+        display: inline;
+        max-width: 270px;
+        margin-top: 43px;
+    }
+  }
+  .hero__slide__img{
+    max-width: 724px;
+  }
+
+.hero{
+    .swiper-pagination-bullet{
+        width: 25px;
+        height: 25px;
+        background: #fff !important;
+        border: 1px solid #00C9C9;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: #00C9C9 !important;
+    }
+}
