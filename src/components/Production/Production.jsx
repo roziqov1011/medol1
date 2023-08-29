@@ -45,7 +45,7 @@ function Production() {
           {
               ProductionData?.map((item, index)=>(
                 <SwiperSlide key={index}>
-                  <div className='production__item' key={index}>
+                  <div className='production__item' data-aos="flip-right" key={index}>
                       <img src={item.img} alt="" />
                       <p>{item.info}</p>
                       <button>{item.btn}</button>
@@ -59,7 +59,7 @@ function Production() {
             ):
             
               ProductionData.map((item,index)=>(
-                <li className='production__item' key={index}>
+                <li className='production__item' data-aos="flip-right" key={index}>
                   <img src={item.img} alt="" />
                   <p>{item.info}</p>
                   <button>{item.btn}</button>

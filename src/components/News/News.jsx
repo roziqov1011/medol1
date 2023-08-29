@@ -33,7 +33,7 @@ function News() {
                 {
                     newsData?.map((item, index)=>(
                         <SwiperSlide key={index}>
-                            <div className="news__item">
+                            <div data-aos="flip-right" className="news__item">
                                 <img src={item.img} alt="" />
                                 <h3>{item.title}</h3>
                                 <span>{item.data}</span>

@@ -34,7 +34,7 @@ function Services() {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                   <div className="services__item">
+                   <div className="services__item" data-aos="zoom-in">
                    <img src={services1} alt="" />
                     <div className="item__info">
                         <h4>СЕРВИС ОБОРУДОВАНИЯ</h4>
@@ -44,7 +44,7 @@ function Services() {
                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="services__item">
+                    <div className="services__item" data-aos="zoom-in">
                     <img src={services2} alt="" />
                     <div className="item__info">
                         <h4>РЕГИСТРАЦИИ</h4>
@@ -54,7 +54,7 @@ function Services() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="services__item">
+                    <div className="services__item" data-aos="zoom-in">
                     <img src={services3} alt="" />
                     <div className="item__info">
                         <h4>УСЛУГИ ЛОГИСТИКИ</h4>

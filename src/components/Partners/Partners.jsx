@@ -47,7 +47,7 @@ function Partners() {
               {
                 partnersData?.map((item,index)=>(
                   <SwiperSlide key={index}>
-                    <div className="partners__item">
+                    <div data-aos="zoom-out-up" className="partners__item">
                       <img src={item.img} alt="" />
                     </div>
                     

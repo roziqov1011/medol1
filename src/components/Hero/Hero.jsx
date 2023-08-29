@@ -39,7 +39,7 @@ function Hero() {
             <p>Ориентированный на среднюю или высокую производительность тестов, анализатор ABL800 FLEX измеряет полный набор параметров, включая pH, газы крови, электролиты, метаболиты и показатели оксиметрии</p>
             <button>Подробнее</button>
           </div>
-          <img src={Analyzer} className='hero__slide__img' alt="" />
+          <img data-aos="flip-left"  data-aos-duration="1000" src={Analyzer} className='hero__slide__img' alt="" />
         </SwiperSlide>
         <SwiperSlide>
           <div className='hero__info'>
@@ -48,7 +48,7 @@ function Hero() {
             <p>Ориентированный на среднюю или высокую производительность тестов, анализатор ABL800 FLEX измеряет полный набор параметров, включая pH, газы крови, электролиты, метаболиты и показатели оксиметрии</p>
             <button>Подробнее</button>
           </div>
-          <img src={Analyzer} className='hero__slide__img' alt="" />
+          <img data-aos="flip-left"  data-aos-duration="1000" src={Analyzer} className='hero__slide__img' alt="" />
         </SwiperSlide>
         <SwiperSlide>
           <div className='hero__info'>
@@ -57,7 +57,7 @@ function Hero() {
             <p>Ориентированный на среднюю или высокую производительность тестов, анализатор ABL800 FLEX измеряет полный набор параметров, включая pH, газы крови, электролиты, метаболиты и показатели оксиметрии</p>
             <button>Подробнее</button>
           </div>
-          <img src={Analyzer} className='hero__slide__img' alt="" />
+          <img data-aos="flip-left"  data-aos-duration="1000" src={Analyzer} className='hero__slide__img' alt="" />
         </SwiperSlide>
       </Swiper>
      </div>

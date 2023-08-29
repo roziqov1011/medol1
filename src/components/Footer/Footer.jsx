@@ -10,7 +10,7 @@ function Footer() {
     <footer className='footer'>
       <div className="container footer__inner">
           <div className="footer__left">
-              <div className="footer__left__top">
+              <div data-aos="zoom-in-right" className="footer__left__top">
               <img src={logo} alt="" />
                 <h3>Контакты</h3>
                 <div>
@@ -35,7 +35,7 @@ function Footer() {
                 <button className='footer__top_btn'>Оставить заявку</button>
                 </span>
               </div>
-              <div className="footer__left__bottom">
+              <div data-aos="zoom-in-right" className="footer__left__bottom">
                 <img src={logo} alt="" />
                 <p>Наша цель – построить прозрачный, долгосрочный бизнес, приносить огромную пользу населению, путем решения глобальных вопросов. Внедряя инновационные технологии на рынок Узбекистана.</p>
               </div>
@@ -43,7 +43,7 @@ function Footer() {
           </div>
           <div className="footer__right">
            <div className='footer__right_inner'>
-           <ul className='footer__list'>
+           <ul data-aos="zoom-in-left" className='footer__list'>
               <li>
                 <h3>О компании</h3>
               </li>
@@ -57,7 +57,7 @@ function Footer() {
                 <a href="#">Вакансии</a>
               </li>
             </ul>
-            <ul className='footer__list'>
+            <ul data-aos="zoom-in-left" className='footer__list'>
               <li>
                 <h3>Продукция</h3>
               </li>
@@ -89,7 +89,7 @@ function Footer() {
                 <a href="#">Диабет</a>
               </li>
             </ul>
-            <ul className='footer__list'>
+            <ul data-aos="zoom-in-left" className='footer__list'>
               <li>
                 <h3>Услуги</h3>
               </li>

@@ -1,3 +1,4 @@
+import Aos from 'aos';
 import './App.scss';
 import Company from './components/Company/Company';
 import Footer from './components/Footer/Footer';
@@ -8,7 +9,9 @@ import Partners from './components/Partners/Partners';
 import Production from './components/Production/Production';
 import Services from './components/Services/Services';
 
+
 function App() {
+  Aos.init();
   return (
       <>
       <Header/>
