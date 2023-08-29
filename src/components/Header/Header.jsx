@@ -53,7 +53,7 @@ function Header() {
           </li>
           <li className='header__logo__item'>
             <a href="/">
-              <img src={logo} alt="" />
+              <img data-aos="flip-right" src={logo} alt="" />
             </a> 
           </li>
         </ul>
@@ -80,7 +80,7 @@ function Header() {
         </ul>
       </div>
       <nav className={bg? 'nav container nav__m': 'nav container'}>
-         <ul className='nav__list'>
+         <ul  className='nav__list'>
           <li className='nav__item'>
             <a onClick={()=> setActive(1)} className={active === 1 ? 'active': null} href="#">МАГАЗИН</a>
           </li>

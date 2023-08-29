@@ -7,7 +7,7 @@ function Company() {
     <section className='company'>
       <h2>О КОМПАНИИ</h2>
       <div className="container company__inner">
-        <span  className='circle1' data-aos="zoom-in">
+        <span  className='circle1' data-aos="zoom-in" >
           <span className='circle2'>
             <span className='circle3'>
               <img src={logo} alt="" />
