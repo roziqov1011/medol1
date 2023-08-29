@@ -111,6 +111,12 @@
         height: 50px !important;
     }
 
+    .header__icon__search{
+        width: 54px !important;
+        height: 54px !important;
+        
+    }
+
     .header__facebook {
         display: flex;
         align-items: center;
@@ -239,5 +245,34 @@
     }
     .header__long__item:last-child{
         display: block;
+    }
+}
+@media (max-width:800px) {
+    .header__logo_list{
+        flex-direction: row-reverse;
+        .header__logo__item{
+            margin: 0;
+            &:nth-child(2){
+                margin-left: 20px;
+            }
+        }
+    }
+    .header__long__item:nth-child(2){
+        display: none;
+    }
+    .header__icon__search{
+        
+        transform: translate(-10px,-1px);
+    }
+}
+
+@media (max-width:600px) {
+    .header__logo__item:first-child, .header__long__item:first-child{
+        display: none !important;
+    }
+    .header__logo__item{
+        img{
+            width: 134px;
+        }
     }
 }

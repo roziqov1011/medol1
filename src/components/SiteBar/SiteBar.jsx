@@ -37,7 +37,6 @@ function SiteBar() {
           <li className='sidebar__item'>
             <a onClick={()=> setActive(6)} className={active === 6 ? 'active': null} href="#"> ОБРАТНАЯ СВЯЗЬ</a>
           </li>
-          
          </ul>
         </div>
        

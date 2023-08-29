@@ -9,10 +9,11 @@ import SiteBar from '../SiteBar/SiteBar';
 
 function Header() {
 
+  const [wWidth, setwWidth] = useState(window.innerWidth)
   const [active, setActive] = useState(1)
   const  [bg, setBg] = useState(false)
+  console.log( wWidth);
   document.addEventListener("scroll", (event) => {
-    console.log( window.innerWidth);
     if(window.scrollY >= 146){
      
       setBg(true)
@@ -23,7 +24,7 @@ function Header() {
   );
   return (
     <>
-    <h1 class="site__name">
+    <h1 className="site__name">
     medol
     </h1>
     <header className={bg ? 'header header__bg': 'header'}>
@@ -56,7 +57,7 @@ function Header() {
         </ul>
         <ul className='header__long__list'>
           <li className='header__long__item'>
-            <SearchIcon className='header__icon'/>
+            <SearchIcon className='header__icon header__icon__search'/>
           </li>
           <li className='header__long__item'>
             <a href="#" className='header__facebook'>
@@ -67,8 +68,8 @@ function Header() {
           </li>
           <li className='header__long__item'>
             <select className='item__long ' name="" id="">
-              <option value="ru">Русский</option>
-              <option value="uz">Uzbek</option>
+              <option value="ru">{wWidth >= 600 ?  'Русский': 'Руc'}</option>
+              <option value="uz">{wWidth >= 600 ? 'Uzbek': 'Uz'}</option>
             </select>
           </li>
          <li className="header__long__item">
