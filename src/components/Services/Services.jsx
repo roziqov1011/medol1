@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Services.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -14,13 +14,17 @@ import services1 from '../../assets/img/services1.png'
 import services2 from '../../assets/img/services2.png'
 import services3 from '../../assets/img/services3.png'
 function Services() {
+    const [wwidth, setWwidth] = useState(window.innerWidth)
+    window.addEventListener('resize', ()=>{
+        setWwidth(window.innerWidth);
+    })
   return (
     <section className='services'>
         <h2>УСЛУГИ</h2>
         <div className="services__slider">
             <div className="container">
             <Swiper
-                slidesPerView={3}
+                slidesPerView={wwidth > 1200 ? 3 : wwidth <= 1200 && wwidth >= 700 ? 2 : 1}
                 spaceBetween={30}
                 freeMode={true}
                 pagination={{

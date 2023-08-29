@@ -30,29 +30,28 @@
         margin-left: -150px;
         width: 574px;
         height: 574px;
-        border-radius: 574px;
+        border-radius: 50%;
         background: #FFF;
         border: 40px solid rgba(0, 201, 201, 0.20);
     }
     .circle2{
-        width: 458px;
-        height: 458px;
-        border-radius: 458px;
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
         border: 40px solid rgba(13, 76, 147, 0.20);
     }
     .circle3{
-        width: 352px;
-        height: 352px;
-        border-radius: 352px;
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
         border: 40px solid rgba(120, 223, 242, 0.20);
     }
 }
 .company__info{
-    border: 1px solid #000;
     padding: 57px 40px;
     width: 100%;
     height: 504px;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 500px 50px 50px 500px;
     background: linear-gradient(180deg, #F5F5F5 0%, rgba(245, 245, 245, 0.00) 100%);
     p{
         margin-left: auto;
@@ -80,3 +79,56 @@
         white-space: nowrap;
     }
 }
+
+@media (max-width:1600px) {
+    .company__inner{
+       .circle1{
+        margin-left: -10px;
+        width: 480px;
+        height: 480px;
+       } 
+    }
+}
+
+@media (max-width:1350px) {
+    .company__inner{
+       .circle1{
+        display: none;
+       } 
+    }
+    .company__info{
+        padding: 57px 40px;
+        width: 100%;
+        border-radius: 50px;
+        height: auto;
+        p{
+            text-align: justify;
+            max-width: 100%;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 173.187%; /* 34.637px */
+            letter-spacing: 1.2px;
+        }
+    }
+}
+
+@media (max-width:600px) {
+   .company{
+    border-bottom: 1px solid #cfcdcd;
+    h2{
+        font-size: 30px;
+    }
+   }
+    .company__info{
+        padding: 23px 20px;
+        width: 100%;
+        p{
+            text-align: justify;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 173.187%; /* 27.71px */
+            letter-spacing: 0.96px;
+        }
+    }
+}
+

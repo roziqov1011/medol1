@@ -11,12 +11,13 @@ function Footer() {
       <div className="container footer__inner">
           <div className="footer__left">
               <div className="footer__left__top">
+              <img src={logo} alt="" />
                 <h3>Контакты</h3>
                 <div>
                   <a href="https://www.google.com/maps/place/%D0%B4%D0%BE%D0%BC+%E2%84%963,+Tashkent,+Uzbekistan/@41.2945406,69.2199819,15z/data=!4m10!1m2!2m1!1z0LMu0KLQsNGI0LrQtdC90YIsINCn0LjQu9Cw0L3Qt9Cw0YAgICAgICAgICAgICAgICAgICAgICAgIDEwINC60LLQsNGA0YLQsNC7LCDQtNC-0LwgMy8x!3m6!1s0x38ae8a4d16e5f5b5:0xb1daefdd2346ec86!8m2!3d41.2954881!4d69.2261509!15sClfQsy7QotCw0YjQutC10L3Rgiwg0KfQuNC70LDQvdC30LDRgCAgICAgICAgICAgICAgICAgICAgICAgMTAg0LrQstCw0YDRgtCw0LssINC00L7QvCAzLzGSAR9tdWx0aV91bml0X3Jlc2lkZW50aWFsX2J1aWxkaW5n4AEA!16s%2Fg%2F11b6b54jkl?entry=ttu" target='_blank'>
                     <LocationOnIcon/>
                     г.Ташкент, Чиланзар
-                      10 квартал, дом 3/1
+                      10 <br /> квартал, дом 3/1
                   </a>
                   <a style={{marginTop:'20px'}} href="mailto:info@medol.uz">
                     <LocalPostOfficeIcon/>

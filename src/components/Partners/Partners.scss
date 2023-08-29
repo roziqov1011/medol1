@@ -13,6 +13,9 @@ h2{
 }
 
 .partners__list{
+  .swiper-button-next, .swiper-button-prev{
+    transform: translateY(-10px);
+}
   .swiper-pagination-bullet{
     width: 25px;
     height: 25px;
@@ -66,4 +69,25 @@ h2{
     width: 235px;
     height: 130px;
     padding: 9px 30px;
+  }
+
+  @media (max-width:550px) {
+    .partners{
+      h2{
+        font-size: 30px;
+      }
+    }
+    .partners__list{
+      // width: 100%;
+      // height: 100%;
+      .swiper-button-next, .swiper-button-prev{
+        padding: 12px;
+        width: 40px;
+        height: 40px;
+    }
+    .swiper-button-next::after, .swiper-button-prev::after{
+        font-size: 14px;
+    }
+    }
+    
   }

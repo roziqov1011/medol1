@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './News.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
@@ -13,13 +13,17 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import { newsData } from '../../lib/newsData';
 
 function News() {
+    const [wWidth, setWwidth] = useState(window.innerWidth)
+  window.addEventListener('resize', ()=>{
+      setWwidth(window.innerWidth);
+  })
   return (
     <section className='news '>
         <div className="container">
             <h2>НОВОСТИ</h2>
             <div className="news__list">
             <Swiper navigation={true} 
-            slidesPerView={3}
+            slidesPerView={wWidth > 1200 ? 3 : wWidth <=1200 && wWidth >700? 2 : 1}
             loop={true}
             autoplay={{
                 delay: 2500,

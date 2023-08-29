@@ -9,10 +9,12 @@ import SiteBar from '../SiteBar/SiteBar';
 
 function Header() {
 
-  const [wWidth, setwWidth] = useState(window.innerWidth)
   const [active, setActive] = useState(1)
   const  [bg, setBg] = useState(false)
-  console.log( wWidth);
+  const [wWidth, setWwidth] = useState(window.innerWidth)
+  window.addEventListener('resize', ()=>{
+      setWwidth(window.innerWidth);
+  })
   document.addEventListener("scroll", (event) => {
     if(window.scrollY >= 146){
      
