@@ -30,7 +30,7 @@ function Partners() {
                   disableOnInteraction: false,
                 }}
                 grid={{
-                rows: 2
+                rows: wWidth> 700? 2 : 1
                 ,
                 }}
                 // grid={wWidth > 560 ? {rows:2,} : {rows:1,}}

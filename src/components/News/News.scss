@@ -185,7 +185,12 @@
         }
     }
 }
-
+@media (max-width:550px) {
+    .news__list{
+        .swiper{
+            margin-top: 0 !important;
+        }}
+}
 @media (max-width: 410px) {
     .news{
         h2{
@@ -194,6 +199,7 @@
         }
     }
     .news__list{
+        
         .news__item{
             height: 470px;
             border-radius: 35px;

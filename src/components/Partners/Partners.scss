@@ -71,10 +71,28 @@ h2{
     padding: 9px 30px;
   }
 
-  @media (max-width:550px) {
+  @media (max-width:700px) {
     .partners{
       h2{
+        margin-bottom: 23px;
+      }
+    }
+    .partners__list{
+      height: auto !important;
+      .swiper-slide{
+        height: 200px !important;
+      }
+    }
+  }
+  @media (max-width:550px) {
+    .partners{
+      padding-bottom: 30px;
+      h2{
         font-size: 30px;
+        margin-top: 24px;
+      }
+      .swiper{
+        margin-top: 0px !important;
       }
     }
     .partners__list{

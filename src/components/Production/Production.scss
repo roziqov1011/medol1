@@ -195,6 +195,11 @@
             input {
                 width: 24px;
                 height: 24px;
+                background-color: #F3F3F3;
+                border: none;
+                color: #00C9C9;
+                margin-top: 0;
+                margin-right: 15px;
             }
         }
 
@@ -251,5 +256,11 @@
         textarea, span{
             width: 100% !important;
         }
+    }
+    .production__redirect{
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+        font-size: 16px;
     }
 }
