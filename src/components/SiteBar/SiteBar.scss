@@ -104,3 +104,10 @@
     display: flex;
     
 }
+
+
+@media (max-width:500px) {
+    .nav__sidebar{
+        padding-left: 24px;
+    }
+}

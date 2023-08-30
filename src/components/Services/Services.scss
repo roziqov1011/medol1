@@ -130,7 +130,13 @@
     .services{
         h2{
             font-size: 30px;
-
+            margin-bottom: 10px;
+        }
+        .services__slider{
+            padding-top: 20px;
+            .swiper{
+                margin-top: 0px;
+            }
         }
     }
 }
