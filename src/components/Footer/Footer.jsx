@@ -4,8 +4,27 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LocalPostOfficeIcon from '@mui/icons-material/LocalPostOffice';
 import logo from '../../assets/img/logo.svg'
+// Modal import 
+import Box from '@mui/material/Box';
+
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+const style = {
+  bgcolor: 'background.paper',
+  boxShadow: 24,
+  p: 4,
+};
 
 function Footer() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => {
+    document.querySelector('.header').style.right = '11px'
+    return setOpen(true)
+  };
+  const handleClose = () => {
+    document.querySelector('.header').style.right = '0px'
+    return setOpen(false)
+  };
   return (
     <footer className='footer'>
       <div className="container footer__inner">
@@ -32,7 +51,7 @@ function Footer() {
                   <a href="tel:+998712766254">+998 71 276-62-54</a>
                   </span>
                 </span>
-                <button className='footer__top_btn'>Оставить заявку</button>
+                <button onClick={handleOpen} className='footer__top_btn'>Оставить заявку</button>
                 </span>
               </div>
               <div data-aos="zoom-in-right" className="footer__left__bottom">
@@ -107,6 +126,33 @@ function Footer() {
            <p className='site__author'>Сайт разработан компанией &nbsp; <a href="www.uz">www.rrt.uz</a></p>
           </div>
       </div>
+      <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+        <Box className="my__modal" sx={style}>
+          <Typography className='modal__top' id="modal-modal-title" variant="h6" component="h2">
+            <button onClick={handleClose}><i className="bi bi-x-lg"></i></button>
+            <h3>Оставьте заявку</h3>
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            <form action="#">
+              <input required type="text" placeholder='ФИО'/>
+              <input required type="text" placeholder='Номер телефона*'/>
+              <input required type="text" placeholder='Тема обращения*'/>
+              <textarea name="" id="" cols="30" rows="5" placeholder='Сообщение*'></textarea>
+              <span>
+                <input required id='dos' type="checkbox" />
+                <label htmlFor="dos">Отправляя заявку Вы соглашаетесь <br />
+                конфиденциальности</label>
+              </span>
+              <button className='modal__btn' type='submit'>Отправить</button>
+            </form>
+          </Typography>
+        </Box>
+      </Modal>
     </footer>
   )
 }
