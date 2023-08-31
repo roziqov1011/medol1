@@ -183,10 +183,10 @@
     .footer__left__top{
         flex-direction: column;
         justify-content: space-around;
+        padding-left: 20px;
         img{
             display: block;
             width: 80%;
-            margin: 0 auto;
         
         }
         h3{
@@ -198,10 +198,18 @@
             margin-top: 22px;
         }
     }
+    .footer__series{
+        margin-top: 22px;
+        padding-left: 20px;
+    }
+    .footer__left__bottom{
+        padding: 0 20px;
+    }
     .footer__top_tel{
         margin-top: 22px;
     }
     .footer__left__bottom{
+        margin-top: 22px;
         img{
             display: none;
         }
