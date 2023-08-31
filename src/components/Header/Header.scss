@@ -272,6 +272,9 @@
 }
 
 @media (max-width:600px) {
+    .nav{
+        margin-top: 0 !important;
+    }
     .header__logo__item:first-child, .header__long__item:first-child{
         display: none !important;
     }

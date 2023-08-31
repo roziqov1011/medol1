@@ -158,6 +158,12 @@
 }
 
 @media (max-width:500px) {
+  .hero{
+    padding-top: 130px;
+    .swiper{
+      margin-top: 0;
+    }
+  }
   .hero__info{
     h2{
       font-size: 32px;
