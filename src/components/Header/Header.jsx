@@ -10,6 +10,7 @@ import SiteBar from '../SiteBar/SiteBar';
 function Header() {
 
   const [active, setActive] = useState(1)
+  const  [long, setLong] = useState('ru')
   const  [bg, setBg] = useState(false)
   const [wWidth, setWwidth] = useState(window.innerWidth)
   window.addEventListener('resize', ()=>{
@@ -68,9 +69,10 @@ function Header() {
             </a>
             
           </li>
-          <li className='header__long__item'>
-            <select className='item__long ' name="" id="">
-              <option value="ru">{wWidth >= 600 ?  'Русский': 'Руc'}</option>
+          <li className='header__long__item '>
+            <img height={'30px'} src={long == 'ru'? "https://cdn.countryflags.com/thumbs/russia/flag-round-250.png":"https://static.vecteezy.com/system/resources/previews/011/571/337/original/circle-flag-of-uzbekistan-free-png.png"} alt="" />
+            <select onChange={(e)=> setLong(e.target.value)} className='item__long ' name="" id="">
+              <option  value="ru">{wWidth >= 600 ?  'Русский': 'Руc'}</option>
               <option value="uz">{wWidth >= 600 ? 'Uzbek': 'Uz'}</option>
             </select>
           </li>

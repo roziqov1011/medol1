@@ -129,7 +129,12 @@
     .header__long__item{
         display: flex;
         position: relative;
-
+        align-items: center;
+        &:nth-child(3){
+            background-color: #fff;
+            border-radius: 54px !important;
+            padding: 0 15px;
+        }
         &:first-child {
             border-radius: 50%;
             width: 50px !important;
@@ -141,7 +146,7 @@
             border: none;
             background-color: #fff;
             color: #0D4C93;
-            padding: 18px 15px;
+            padding: 18px 0;
             border-radius: 54px;
             -webkit-appearance: none;
             width: 135px;
@@ -276,9 +281,13 @@
         }
     }
     .header__long__item{
+        &:nth-child(3){
+            padding-left: 5px !important;
+        }
         .item__long{
             padding-left: 15px !important;
-            width: 100px !important;
+            padding-right: 20px !important;
+            width: auto !important;
         }
     }
 }
