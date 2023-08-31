@@ -294,3 +294,22 @@
         }
     }
 }
+
+
+@media ((max-width: 500px)) {
+    .header__logo__item{
+        &:nth-child(2){
+            .header__icon{
+                width: 40px !important;
+                height: 40px !important;
+            }
+        }
+        img{
+            width: 124px;
+        }
+    }
+    .item__long{
+       padding-top: 12px !important;
+       padding-bottom: 12px !important;
+    }
+}
